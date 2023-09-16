@@ -28,7 +28,13 @@ export default function TeacherItem({ teacher, toggleState }) {
       <div style={fieldStyle}>{teacher.Surname}</div>
       <div style={fieldStyle}>{teacher.Name}</div>
       <div style={fieldStyle}>{teacher.Subject}</div>
-      <input type="checkbox" checked={teacher.selected} onClick={toggleState} />
+      <div>
+        <input
+          type="checkbox"
+          checked={teacher.selected}
+          onClick={toggleState}
+        />
+      </div>
     </div>
   );
 }
